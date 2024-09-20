@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ASCII Ripple Effect</title>
+    <title>click anywhere</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <style>
         body {
             margin: 0;
@@ -13,9 +14,62 @@
         canvas {
             display: block;
         }
+        p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #ffa07a;
+            text-align: center;
+            font-family: Courier, monospace;
+        }
+
+        h3 {
+            position: top;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #ffa07a;
+            text-align: center;
+            font-family: 'Consolas', monospace;
+        }
+
+        /* link styles */
+        a:link {
+            color: #ffa07a;
+        }
+        a:visited {
+            color: coral;
+        }
+        a:hover {
+            color: white;
+        }
+        a:active {
+            color: red;
+        }
     </style>
 </head>
+
+<h3>
+    -•●
+    <a href='https://www.instagram.com/immol8r/'>art</a> • <a href='https://soundcloud.com/immol8r/'>music</a> • <a href='https://www.youtube.com/@sammish/'>videos</a> • <a href='https://smarancod.es/blog/hello/'>about</a>
+    ●•-
+</h3>
+
 <body>
+    <p>
+        <a href='https://staydown.money/wr?prev=https://sammi.sh/'>&lt;-&nbsp; prev</a>
+        ☆*:.｡. this site is part of the <a href='https://staydown.money/'>staydown.money</a> 
+      webring .｡.:*☆
+        <a href='https://staydown.money/wr?next=https://sammi.sh/'>next &nbsp;-&gt;</a>
+    </p>
+
     <canvas id="rippleCanvas"></canvas>
     <script src="script.js"></script>
 </body>
